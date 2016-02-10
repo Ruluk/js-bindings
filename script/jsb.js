@@ -54,6 +54,13 @@ if (window.ccs) {
 }
 
 if (window.ccui) {
+    cc.EditBoxDelegate = cc.Class.extend({
+        editBoxEditingDidBegin: function (sender) {},
+        editBoxEditingDidEnd: function (sender) {},
+        editBoxTextChanged: function (sender, text) {},
+        editBoxReturn: function (sender) {}
+    });
+
     // move from jsb_boot.js line 912
     //start------------------------------
     cc.EditBox = ccui.EditBox;
